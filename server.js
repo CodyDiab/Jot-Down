@@ -56,15 +56,15 @@ app.post("/api/notes", (req, res) => {
   req.body.id = noteId; // add id
   fs.readFile("./db/db.json", "utf8" , (err,data) => {
       if(err) {
-          alert("Error in posting note")
+          console.log("Error in posting note")
           return false;
       }else{
           data = JSON.parse(data);
           data = data.concat(req.body);
           data = JSON.stringify(data);
-          fs.writeFile("./db/db.json", (data,err) => {
+          fs.writeFile("./db/db.json", data , (err) => {
               if(err) {
-                  alert("Error in Post")
+                  console.log("Error in Post")
                   return false;
               }else{
                   res.json(data);
@@ -79,7 +79,7 @@ app.post("/api/notes", (req, res) => {
 
 app.delete("/api/notes/:id", (req,res) => {
     let id = req.params.id;
-    fs.readFile("./db/db.json", "utf8",(err,data) => {
+    fs.readFile("./db/db.json", "utf8", (err,data) => {
         if(err){
             alert("Error could not READ",err);
             return 0
