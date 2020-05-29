@@ -1,0 +1,23 @@
+{
+  "name": "jot-down",
+  "version": "1.0.0",
+  "description": "note taking app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyDiab/Jot-Down.git"
+  },
+  "author": "Cody Diab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodyDiab/Jot-Down/issues"
+  },
+  "homepage": "https://github.com/CodyDiab/Jot-Down#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
