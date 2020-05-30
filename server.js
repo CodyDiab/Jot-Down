@@ -103,7 +103,7 @@ app.delete("/api/notes/:id", (req,res) => {
 });
 
 ///Routes here?
-app.get("notes",(req,res) => {
+app.get("/notes",(req,res) => {
     res.sendFile(path.join(__dirname,"/public/notes.html"));
 });
 
