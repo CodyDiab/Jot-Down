@@ -76,7 +76,7 @@ app.post("/api/notes", (req, res) => {
 });
 
 
-
+//delete end point
 app.delete("/api/notes/:id", (req,res) => {
     let id = req.params.id;
     fs.readFile("./db/db.json", "utf8", (err,data) => {
@@ -102,7 +102,7 @@ app.delete("/api/notes/:id", (req,res) => {
     });
 });
 
-///Routes here?
+///Routes here
 app.get("/notes",(req,res) => {
     res.sendFile(path.join(__dirname,"/public/notes.html"));
 });
