@@ -1,6 +1,6 @@
 # Jot Down
 
-## Jot Down is a note taking application flexing the abbility to create and access API data via the Express js framework.
+## Jot Down is a note taking application flexing the ability to create and access API data via the Express js framework.
 
 
 <img src="./screenshot/Screenshot (15).png" alt="">
